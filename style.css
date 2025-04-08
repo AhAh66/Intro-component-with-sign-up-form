@@ -1,0 +1,196 @@
+/* استيراد خط جميل */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap');
+
+:root{
+    --Primary-red:hsl(0, 100%, 74%);
+    --primary-Green: hsl(154, 59%, 51%);
+    --primary-Blue:hsl(248, 32%, 49%);
+    --Neutral-DarkBlue: hsl(249, 10%, 26%);
+    --Neutral-Grayish-Blue:hsl(246, 25%, 77%);
+}
+.error-message{
+    color: red;
+    font-size: 0.8rem;
+    display: none;
+    margin-top: 5px;
+}
+
+input {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1rem;
+}
+
+input.error {
+    border: 2px solid red;
+
+    background-size: 20px;
+}
+
+.green {
+    background-color: #38cc77;
+    color: white;
+    font-size: 1rem;
+    font-weight: 600;
+    border: none;
+    padding: 15px;
+    width: 100%;
+    border-radius: 10px;
+    cursor: pointer;
+    margin-top: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background-color:var(--Primary-red);
+    background-image: url('/images/bg-intro-desktop.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    padding: 20px;
+    text-align: left;
+}
+
+#content {
+    background-color: #ff7a7a;
+    color: white;
+    padding: 50px;
+    max-width: 500px;
+    min-width: 200px;
+    margin-bottom: 20px;
+}
+
+h1 {
+    font-size: 2rem;
+    font-weight: 700;
+    line-height: 1.4;
+}
+
+p {
+    font-size: 1rem;
+    opacity: 0.9;
+    margin-top: 10px;
+}
+
+#right {
+    width: 100%;
+    max-width: 600px;
+    padding: 40px;
+ 
+    border-radius: 10px;
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.purbal {
+    background-color: #5e54a4;
+    color: white;
+    font-size: 1rem;
+    font-weight: 600;
+    border: none;
+    padding: 15px;
+    width: 100%;
+    border-radius: 10px;
+    cursor: pointer;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+}
+.purbal span{
+    color:#ccc
+}
+.purbal:hover {
+    background-color: #4a439c;
+}
+
+form {
+    margin-top: 20px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    padding: 30px;
+    border-radius: 10px;
+    background-color: #fff;
+}
+
+input {
+    width: 100%;
+    padding: 12px;
+    margin: 8px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1rem;
+}
+
+input:focus {
+    border-color: #5e54a4;
+    outline: none;
+}
+
+.green {
+    background-color: #38cc77;
+    color: white;
+    font-size: 1rem;
+    font-weight: 600;
+    border: none;
+    padding: 15px;
+    width: 100%;
+    border-radius: 10px;
+    cursor: pointer;
+    margin-top: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.green:hover {
+    background-color: #32b869;
+}
+
+form p {
+    font-size: 0.8em;
+    padding-bottom: 18px;
+}
+
+p span#red {
+    color: #ff4d4d;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+p span#red:hover {
+    text-decoration: underline;
+}
+
+@media (max-width: 495px) {
+    body {
+        background-image: url('/images/bg-intro-mobile.png');
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        /* background-color: #5e54a4; */
+        width: 200%;
+        height: 200%;
+        display: grid;
+        grid-column: 1fr 1fr;
+    }
+    
+    #content {
+        width: 90%;
+        padding: 30px;
+    }
+
+    #right {
+        width: 90%;
+        padding: 20px;
+    }
+}
